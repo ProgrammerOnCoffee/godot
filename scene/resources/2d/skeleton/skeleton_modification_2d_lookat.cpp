@@ -112,7 +112,6 @@ void SkeletonModification2DLookAt::_execute(float p_delta) {
 	}
 
 	if (target_node_cache.is_null()) {
-		WARN_PRINT_ONCE("Target cache is out of date. Attempting to update...");
 		update_target_cache();
 		return;
 	}
